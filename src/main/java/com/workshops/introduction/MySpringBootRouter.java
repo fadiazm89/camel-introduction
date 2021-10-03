@@ -15,7 +15,9 @@ public class MySpringBootRouter extends RouteBuilder {
     public void configure() {
         from("timer:hello?period={{timer.period}}").routeId("hello")
                 .transform().method("myBean", "saySomething")
+          //TODO: Set a header in the message with value "java" and print into a new log
                 .log("{{camel.springboot.name}}")
+          //TODO: add to log component the feature to log all headers and properties
                 .to("log:foo");
 
 
