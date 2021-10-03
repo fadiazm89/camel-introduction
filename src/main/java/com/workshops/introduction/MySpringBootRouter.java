@@ -21,7 +21,7 @@ public class MySpringBootRouter extends RouteBuilder {
                 .to("log:foo");
 
 
-         //TODO: add route that reads files from data/inbox and move into data/outbox
+         //TODO: add a new route that reads files from data/inbox and move into data/outbox
     }
 
 }
