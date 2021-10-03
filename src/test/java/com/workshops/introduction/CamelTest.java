@@ -1,3 +1,5 @@
+package com.workshops.introduction;
+
 import com.workshops.introduction.MySpringBootApplication;
 import org.apache.camel.CamelContext;
 import org.apache.camel.Exchange;
